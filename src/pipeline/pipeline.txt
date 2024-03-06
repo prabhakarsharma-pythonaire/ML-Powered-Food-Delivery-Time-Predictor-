@@ -1,0 +1,5 @@
+Data ingestion
+1. Constant file->configuration file->data ingestion
+
+Data Transformation
+cosntant file->confiuration file ->data transformation ->utils file ->data transformation
