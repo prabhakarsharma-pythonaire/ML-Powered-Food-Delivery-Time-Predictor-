@@ -27,3 +27,14 @@ RAW_DATA_DIR_KEY="raw.csv"
 TRAIN_DATA_DIR_KEY="train.csv"
 
 TEST_DATA_DIR_KEY="test.csv"
+
+
+#Data Transformation releaed variables
+DATA_TRANSFORMATION_ARTIFACT="data_transformation"
+DATA_PREPROCCED_DIR="procceor"
+DATA_TRANSFORMATION_PROCESSING_OBJ="processor.pkl"
+DATA_TRANSFORM_DIR="transformation"
+TRANSFORMATION_TRAIN_DIR_KEY="train.csv"
+TRANSFORMATION_TEST_DIR_KEY="train.csv"
+
+#ARTIFACT /data_transformation/processor.pkl and transformation ->train.csv and test.csv
