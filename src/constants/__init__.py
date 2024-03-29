@@ -38,3 +38,10 @@ TRANSFORMATION_TRAIN_DIR_KEY="train.csv"
 TRANSFORMATION_TEST_DIR_KEY="test.csv"
 
 #ARTIFACT /data_transformation/processor.pkl and transformation ->train.csv and test.csv
+
+
+#Model training
+
+MODEL_TRAINER_KEY="model_trainer"
+MODEL_OBJECT="model.pkl"
+
