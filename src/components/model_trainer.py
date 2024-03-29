@@ -24,8 +24,10 @@ class ModelTrainer:
     def __init__(self):
         self.model_trainer_config = ModelTrainerConfig()
 
-    def initiate_model_training(self, train_array, test_array):
+    def initate_model_training(self, train_array, test_array):
         try:
+            logging.info('Splitting Dependent and Independent variables from train and test data')
+
             X_train ,Y_train,X_test,Y_test = (train_array[:,:-1],train_array[:,-1],
                                               test_array[:,:-1],test_array[:,-1])
 
@@ -40,6 +42,9 @@ class ModelTrainer:
 
             model_report : dict =evaluate_model(X_train ,Y_train,X_test,Y_test,models)
             print(model_report)
+            print('\n====================================================================================\n')
+            logging.info(f'Model Report : {model_report}')
+
 
             best_model_score=max(sorted(model_report.values()))
 
@@ -52,6 +57,7 @@ class ModelTrainer:
             best_model = models[best_model_name]
 
             print(f"Best model :{best_model_name},R2 socre:{best_model_score}")
+            print('\n====================================================================================\n')
             logging.info(f"Best model :{best_model_name},R2 socre:{best_model_score}")
 
             save_obj(file_path=self.model_trainer_config.trained_model_file_path,
@@ -59,4 +65,5 @@ class ModelTrainer:
 
 
         except Exception as e:
+            logging.info('Exception occured at Model Training')
             raise CustomException(e,sys)

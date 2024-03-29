@@ -22,20 +22,32 @@ class DataIngestion:
     def __init__(self):
         self.data_ingestion_config=DataIngestionConfig()
 
-    def intitiate_data_ingestion(self):
+    def initiate_data_ingestion(self):
         try:
             df= pd.read_csv(DATASET_PATH)
 
+            logging.info(f"Download data {DATASET_PATH}")
+
+            logging.info('Dataset read as pandas Dataframe')
+
             os.makedirs(os.path.dirname(self.data_ingestion_config.raw_data_path),exist_ok=True)
             df.to_csv(self.data_ingestion_config.raw_data_path,index= False)
+
+            logging.info("train test split")
 
             train_set,test_set=train_test_split(df,test_size=0.2, random_state= 45)
 
             os.makedirs(os.path.dirname(self.data_ingestion_config.train_data_path),exist_ok=True)
             train_set.to_csv(self.data_ingestion_config.train_data_path,header=True)
 
+            logging.info(f"train data path, {TRAIN_FILE_PATH}")
+
             os.makedirs(os.path.dirname(self.data_ingestion_config.test_data_path), exist_ok=True)
             test_set.to_csv(self.data_ingestion_config.test_data_path, header=True)
+
+            logging.info(f"test data path, {TEST_FILE_PATH}")
+
+            logging.info("data ingestion complete")
 
             return (
                 self.data_ingestion_config.train_data_path,
@@ -43,14 +55,15 @@ class DataIngestion:
             )
 
         except Exception as e:
+            logging.info('Exception occured at Data Ingestion stage')
             raise CustomException(e,sys)
 
 
 
 if __name__=="__main__":
     obj=DataIngestion()
-    train_data,test_data=obj.intitiate_data_ingestion()
+    train_data,test_data=obj.iinitiate_data_ingestion()
     data_transformation = DataTransformation()
-    train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)
+    train_arr,test_arr,_= data_transformation.initaite_data_transformation(train_data, test_data)
     model_trainer = ModelTrainer()
     print(model_trainer.initiate_model_training(train_arr,test_arr))

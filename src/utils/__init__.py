@@ -35,3 +35,12 @@ def evaluate_model(X_train ,Y_train,X_test,Y_test,models):
 
     except Exception as e:
         raise CustomException(e, sys)
+
+def load_model(file_path):
+    try:
+        with open(file_path,"rb") as f:
+            return pickle.load(f)
+
+    except Exception as e:
+        logging.info("Exception occured while lpading model")
+        raise CustomException(e,sys)
