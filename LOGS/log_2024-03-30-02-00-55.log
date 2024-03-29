@@ -1,0 +1,75 @@
+[2024-03-30 02:00:57,732] werkzeug - WARNING -  * Debugger is active!
+[2024-03-30 02:00:57,738] werkzeug - INFO -  * Debugger PIN: 136-700-819
+[2024-03-30 02:01:48,660] root - INFO - Download data C:\prabhakar\projects\end-to-end-project\Data\finalTrain.csv
+[2024-03-30 02:01:48,660] root - INFO - Dataset read as pandas Dataframe
+[2024-03-30 02:01:48,997] root - INFO - train test split
+[2024-03-30 02:01:49,288] root - INFO - train data path, C:\prabhakar\projects\end-to-end-project\Artifact\data_ingestion\2024-03-30 02-00-55\ingested_dir\train.csv
+[2024-03-30 02:01:49,356] root - INFO - test data path, C:\prabhakar\projects\end-to-end-project\Artifact\data_ingestion\2024-03-30 02-00-55\ingested_dir\test.csv
+[2024-03-30 02:01:49,356] root - INFO - data ingestion complete
+[2024-03-30 02:01:49,482] root - INFO - Obtaining preprocessing object
+[2024-03-30 02:01:49,482] root - INFO - Optaining Feature engineering object
+[2024-03-30 02:01:49,482] root - INFO - ******************feature Engineering started******************
+[2024-03-30 02:01:49,482] root - INFO - Applying feature engineering object on training dataframe and testing dataframe
+[2024-03-30 02:01:49,482] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Training data <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2024-03-30 02:01:49,482] root - INFO - Feature Enineering - Train Data 
+[2024-03-30 02:01:49,485] root - INFO - dropping the Id column
+[2024-03-30 02:01:49,485] root - INFO - Creating feature on latitude nad longitude
+[2024-03-30 02:01:49,485] root - INFO - droping columns from our original dataset
+[2024-03-30 02:01:49,499] root - INFO - Train Dataframe Head: 
+   Unnamed: 0  Delivery_person_Age  Delivery_person_Ratings Weather_conditions Road_traffic_density  Vehicle_condition Type_of_order Type_of_vehicle  multiple_deliveries Festival           City  Time_taken (min)      distance
+0       14989                 33.0                      5.0         Sandstorms                  Low                  0        Drinks      motorcycle                  1.0       No  Metropolitian                26  20002.520257
+1       40024                 21.0                      4.7         Sandstorms               Medium                  0         Snack      motorcycle                  1.0       No  Metropolitian                20  20002.520257
+2       17122                 32.0                      5.0                Fog               Medium                  1          Meal      motorcycle                  1.0       No  Metropolitian                39  20002.520257
+3       17527                 31.0                      4.9             Stormy                 High                  2          Meal         scooter                  1.0       No  Metropolitian                26  20002.520257
+4        8942                 36.0                      4.7                Fog                  Jam                  1          Meal      motorcycle                  1.0       No  Metropolitian                39  20002.520257
+[2024-03-30 02:01:49,499] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Test data <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2024-03-30 02:01:49,499] root - INFO - Feature Enineering - Test Data 
+[2024-03-30 02:01:49,502] root - INFO - dropping the Id column
+[2024-03-30 02:01:49,502] root - INFO - Creating feature on latitude nad longitude
+[2024-03-30 02:01:49,503] root - INFO - droping columns from our original dataset
+[2024-03-30 02:01:49,503] root - INFO - Train Dataframe Head: 
+   Unnamed: 0  Delivery_person_Age  Delivery_person_Ratings Weather_conditions Road_traffic_density  Vehicle_condition Type_of_order Type_of_vehicle  multiple_deliveries Festival           City  Time_taken (min)      distance
+0       43226                 34.0                      4.0             Cloudy                  Jam                  2        Drinks      motorcycle                  2.0       No  Metropolitian                38  20002.520257
+1       27825                 34.0                      4.6                Fog               Medium                  0          Meal      motorcycle                  1.0       No  Metropolitian                45  20002.520257
+2       29349                 21.0                      4.9              Sunny               Medium                  2          Meal      motorcycle                  1.0       No          Urban                11  20002.520257
+3       11311                 24.0                      5.0             Cloudy                  Low                  2          Meal         scooter                  0.0       No            NaN                17  20002.520257
+4       24845                 20.0                      4.6         Sandstorms               Medium                  1        Drinks         scooter                  0.0       No          Urban                24  20002.520257
+[2024-03-30 02:01:49,710] root - INFO - Saving csv to train_data and test_data.csv
+[2024-03-30 02:01:49,710] root - INFO - Data Transformation initiated
+[2024-03-30 02:01:49,713] root - INFO - shape of (36467, 12) and (9117, 12)
+[2024-03-30 02:01:49,713] root - INFO - shape of (36467,) and (9117,)
+[2024-03-30 02:01:49,811] root - INFO - Applying preprocessing object on training and testing datasets.
+[2024-03-30 02:01:49,812] root - INFO - shape of (36467, 20) and (9117, 20)
+[2024-03-30 02:01:49,812] root - INFO - shape of (36467,) and (9117,)
+[2024-03-30 02:01:49,812] root - INFO - transformation completed
+[2024-03-30 02:01:49,816] root - INFO - train_arr, test_arr completed
+[2024-03-30 02:01:49,816] root - INFO - train arr , test arr
+[2024-03-30 02:01:49,816] root - INFO - converting train_arr and test_arr to dataframe
+[2024-03-30 02:01:50,326] root - INFO - transformed_train_path
+[2024-03-30 02:01:50,326] root - INFO - transformed dataset columns : RangeIndex(start=0, stop=21, step=1)
+[2024-03-30 02:01:50,467] root - INFO - Preprocessor file saved
+[2024-03-30 02:01:50,468] root - INFO - Feature eng file saved
+[2024-03-30 02:01:50,470] root - INFO - Splitting Dependent and Independent variables from train and test data
+[2024-03-30 02:03:27,692] root - INFO - Model Report : {'XGBRegressor': 0.7129014261720379, 'SVR': 0.48439798567472303, 'RandomForestRegressor': 0.6848689336441014, 'GradientBoostingRegressor': 0.6858633127374224, 'DecisionTreeRegressor': 0.42737582758038817}
+[2024-03-30 02:03:27,692] root - INFO - Best model :XGBRegressor,R2 socre:0.7129014261720379
+[2024-03-30 02:03:27,713] root - INFO - Splitting Dependent and Independent variables from train and test data
+[2024-03-30 02:05:02,128] root - INFO - Model Report : {'XGBRegressor': 0.7129014261720379, 'SVR': 0.48439798567472303, 'RandomForestRegressor': 0.6834510296017844, 'GradientBoostingRegressor': 0.6858633127374225, 'DecisionTreeRegressor': 0.4195633069261958}
+[2024-03-30 02:05:02,129] root - INFO - Best model :XGBRegressor,R2 socre:0.7129014261720379
+[2024-03-30 02:05:02,166] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:05:02] "POST /train HTTP/1.1" 200 -
+[2024-03-30 02:05:52,827] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:05:52] "GET /train HTTP/1.1" 200 -
+[2024-03-30 02:05:55,385] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:05:55] "GET /predict HTTP/1.1" 200 -
+[2024-03-30 02:06:20,353] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:06:20] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2024-03-30 02:06:20,574] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:06:20] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-03-30 02:06:20,574] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:06:20] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-03-30 02:06:20,914] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:06:20] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-03-30 02:06:52,701] root - INFO - DataFrame gatherd
+[2024-03-30 02:06:52,713] root - INFO -  error in transforming data
+[2024-03-30 02:06:52,713] root - INFO - Error occured in prediction pipeline
+[2024-03-30 02:06:52,717] werkzeug - INFO -  * Detected change in 'C:\\ProgramData\\Anaconda3\\envs\\end-to-end-project\\Lib\\site-packages\\sklearn\\pipeline.py', reloading
+[2024-03-30 02:06:52,718] werkzeug - INFO -  * Detected change in 'C:\\ProgramData\\Anaconda3\\envs\\end-to-end-project\\Lib\\site-packages\\sklearn\\utils\\_set_output.py', reloading
+[2024-03-30 02:06:52,722] werkzeug - INFO -  * Detected change in 'C:\\ProgramData\\Anaconda3\\envs\\end-to-end-project\\Lib\\site-packages\\pandas\\core\\frame.py', reloading
+[2024-03-30 02:06:52,725] werkzeug - INFO -  * Detected change in 'C:\\ProgramData\\Anaconda3\\envs\\end-to-end-project\\Lib\\site-packages\\pandas\\core\\generic.py', reloading
+[2024-03-30 02:06:52,728] werkzeug - INFO -  * Detected change in 'C:\\ProgramData\\Anaconda3\\envs\\end-to-end-project\\Lib\\site-packages\\pandas\\core\\indexes\\base.py', reloading
+[2024-03-30 02:06:52,754] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:06:52] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2024-03-30 02:06:52,790] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:06:52] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-03-30 02:06:52,950] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:06:52] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -

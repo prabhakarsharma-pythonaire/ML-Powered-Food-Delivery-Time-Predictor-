@@ -1,0 +1,12 @@
+[2024-03-30 02:11:18,966] werkzeug - WARNING -  * Debugger is active!
+[2024-03-30 02:11:18,975] werkzeug - INFO -  * Debugger PIN: 136-700-819
+[2024-03-30 02:11:19,013] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:11:19] "GET / HTTP/1.1" 200 -
+[2024-03-30 02:11:21,442] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:11:21] "GET /predict HTTP/1.1" 200 -
+[2024-03-30 02:11:39,262] root - INFO - DataFrame gatherd
+[2024-03-30 02:11:39,333] root - INFO - dropping the Id column
+[2024-03-30 02:11:39,333] root - INFO - Creating feature on latitude nad longitude
+[2024-03-30 02:11:39,333] root - INFO -  error in transforming data
+[2024-03-30 02:11:39,333] root - INFO - Error occured in prediction pipeline
+[2024-03-30 02:11:39,337] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\pipeline\\prediction_pipeline.py', reloading
+[2024-03-30 02:11:39,337] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\pipeline\\prediction_pipeline.py', reloading
+[2024-03-30 02:11:39,375] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:11:39] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -

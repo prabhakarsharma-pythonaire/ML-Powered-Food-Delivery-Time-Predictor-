@@ -1,0 +1,21 @@
+[2024-03-29 22:44:59,550] werkzeug - WARNING -  * Debugger is active!
+[2024-03-29 22:44:59,553] werkzeug - INFO -  * Debugger PIN: 136-700-819
+[2024-03-29 22:52:46,764] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-29 22:52:46,765] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-29 22:52:46,767] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-29 22:52:46,767] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-29 22:52:46,767] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-29 22:52:46,768] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-29 22:52:46,768] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+:20,053] root - INFO - droping columns from our original dataset
+[2024-03-29 22:46:20,245] root - INFO - Pipeline Steps Completed
+[2024-03-29 22:46:20,973] root - ERROR - 'ModelTrainer' object has no attribute 'initate_model_training'
+[2024-03-29 22:46:20,975] werkzeug - INFO - 127.0.0.1 - - [29/Mar/2024 22:46:20] "POST /train HTTP/1.1" 200 -
+[2024-03-29 22:46:22,650] werkzeug - INFO - 127.0.0.1 - - [29/Mar/2024 22:46:22] "GET /train HTTP/1.1" 200 -
+[2024-03-29 22:52:46,763] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-29 22:52:46,763] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-29 22:52:46,764] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-29 22:52:46,764] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-29 22:52:46,764] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-29 22:52:46,765] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-29 22:52:46,765] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading

@@ -1,0 +1,25 @@
+[2024-03-30 00:26:56,573] werkzeug - WARNING -  * Debugger is active!
+[2024-03-30 00:26:56,587] werkzeug - INFO -  * Debugger PIN: 136-700-819
+[2024-03-30 00:26:58,076] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 00:26:58] "GET / HTTP/1.1" 200 -
+[2024-03-30 00:27:10,525] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 00:27:10] "GET /train HTTP/1.1" 200 -
+[2024-03-30 00:27:13,347] root - INFO - Optaining FE steps object
+[2024-03-30 00:27:13,347] root - INFO - ******************feature Engineering started******************
+[2024-03-30 00:27:13,363] root - INFO - droping columns from our original dataset
+[2024-03-30 00:27:13,367] root - INFO - droping columns from our original dataset
+[2024-03-30 00:27:13,556] root - INFO - Pipeline Steps Completed
+[2024-03-30 00:28:50,656] root - INFO - Best model :XGBRegressor,R2 socre:0.7129014261720379
+[2024-03-30 00:30:25,164] root - INFO - Best model :XGBRegressor,R2 socre:0.7129014261720379
+[2024-03-30 00:30:25,197] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 00:30:25] "POST /train HTTP/1.1" 200 -
+[2024-03-30 00:30:53,402] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 00:30:53] "GET /train HTTP/1.1" 200 -
+[2024-03-30 00:31:12,058] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 00:31:12] "GET /predict HTTP/1.1" 200 -
+[2024-03-30 00:31:17,254] root - INFO - DataFrame gatherd
+[2024-03-30 00:31:17,281] root - INFO - Error occured in prediction pipeline
+[2024-03-30 00:31:17,302] werkzeug - INFO -  * Detected change in 'C:\\Users\\91920\\AppData\\Roaming\\Python\\Python39\\site-packages\\flask\\app.py', reloading
+[2024-03-30 00:31:17,311] werkzeug - INFO -  * Detected change in 'C:\\ProgramData\\Anaconda3\\envs\\end-to-end-project\\Lib\\site-packages\\sklearn\\pipeline.py', reloading
+[2024-03-30 00:31:17,312] werkzeug - INFO -  * Detected change in 'C:\\ProgramData\\Anaconda3\\envs\\end-to-end-project\\Lib\\site-packages\\sklearn\\utils\\_set_output.py', reloading
+[2024-03-30 00:31:17,314] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_transformatoin.py', reloading
+[2024-03-30 00:31:17,314] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_transformatoin.py', reloading
+[2024-03-30 00:31:17,324] werkzeug - INFO -  * Detected change in 'C:\\ProgramData\\Anaconda3\\envs\\end-to-end-project\\Lib\\site-packages\\pandas\\core\\frame.py', reloading
+[2024-03-30 00:31:17,327] werkzeug - INFO -  * Detected change in 'C:\\ProgramData\\Anaconda3\\envs\\end-to-end-project\\Lib\\site-packages\\pandas\\core\\generic.py', reloading
+[2024-03-30 00:31:17,329] werkzeug - INFO -  * Detected change in 'C:\\ProgramData\\Anaconda3\\envs\\end-to-end-project\\Lib\\site-packages\\pandas\\core\\indexes\\base.py', reloading
+[2024-03-30 00:31:17,355] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 00:31:17] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -

@@ -1,0 +1,67 @@
+[2024-03-30 02:27:58,572] werkzeug - WARNING -  * Debugger is active!
+[2024-03-30 02:27:58,576] werkzeug - INFO -  * Debugger PIN: 136-700-819
+[2024-03-30 02:27:58,702] root - INFO - Download data C:\prabhakar\projects\end-to-end-project\Data\finalTrain.csv
+[2024-03-30 02:27:58,702] root - INFO - Dataset read as pandas Dataframe
+[2024-03-30 02:27:59,008] root - INFO - train test split
+[2024-03-30 02:27:59,265] root - INFO - train data path, C:\prabhakar\projects\end-to-end-project\Artifact\data_ingestion\2024-03-30 02-27-56\ingested_dir\train.csv
+[2024-03-30 02:27:59,328] root - INFO - test data path, C:\prabhakar\projects\end-to-end-project\Artifact\data_ingestion\2024-03-30 02-27-56\ingested_dir\test.csv
+[2024-03-30 02:27:59,328] root - INFO - data ingestion complete
+[2024-03-30 02:27:59,439] root - INFO - Obtaining preprocessing object
+[2024-03-30 02:27:59,439] root - INFO - Obtaining feature engineering object.
+[2024-03-30 02:27:59,439] root - INFO - 
+******************** Feature Engneering Started ********************
+
+
+[2024-03-30 02:27:59,439] root - INFO - Applying feature engineering object on training dataframe and testing dataframe
+[2024-03-30 02:27:59,439] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Training data <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2024-03-30 02:27:59,439] root - INFO - Feature Enineering - Train Data 
+[2024-03-30 02:27:59,439] root - INFO - dropping the Id column
+[2024-03-30 02:27:59,439] root - INFO - Creating feature on latitude nad longitude
+[2024-03-30 02:27:59,459] root - INFO - Train Dataframe Head: 
+   Unnamed: 0  Delivery_person_Age  Delivery_person_Ratings Weather_conditions Road_traffic_density  Vehicle_condition Type_of_order Type_of_vehicle  multiple_deliveries Festival           City  Time_taken (min)   distance
+0       14989                 33.0                      5.0         Sandstorms                  Low                  0        Drinks      motorcycle                  1.0       No  Metropolitian                26  16.849940
+1       40024                 21.0                      4.7         Sandstorms               Medium                  0         Snack      motorcycle                  1.0       No  Metropolitian                20  13.788852
+2       17122                 32.0                      5.0                Fog               Medium                  1          Meal      motorcycle                  1.0       No  Metropolitian                39  19.916433
+3       17527                 31.0                      4.9             Stormy                 High                  2          Meal         scooter                  1.0       No  Metropolitian                26   6.081092
+4        8942                 36.0                      4.7                Fog                  Jam                  1          Meal      motorcycle                  1.0       No  Metropolitian                39  14.152801
+[2024-03-30 02:27:59,459] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Test data <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2024-03-30 02:27:59,459] root - INFO - Feature Enineering - Test Data 
+[2024-03-30 02:27:59,459] root - INFO - dropping the Id column
+[2024-03-30 02:27:59,459] root - INFO - Creating feature on latitude nad longitude
+[2024-03-30 02:27:59,465] root - INFO - Train Dataframe Head: 
+   Unnamed: 0  Delivery_person_Age  Delivery_person_Ratings Weather_conditions Road_traffic_density  Vehicle_condition Type_of_order Type_of_vehicle  multiple_deliveries Festival           City  Time_taken (min)   distance
+0       43226                 34.0                      4.0             Cloudy                  Jam                  2        Drinks      motorcycle                  2.0       No  Metropolitian                38  10.428149
+1       27825                 34.0                      4.6                Fog               Medium                  0          Meal      motorcycle                  1.0       No  Metropolitian                45  16.114177
+2       29349                 21.0                      4.9              Sunny               Medium                  2          Meal      motorcycle                  1.0       No          Urban                11  17.076597
+3       11311                 24.0                      5.0             Cloudy                  Low                  2          Meal         scooter                  0.0       No            NaN                17   7.772523
+4       24845                 20.0                      4.6         Sandstorms               Medium                  1        Drinks         scooter                  0.0       No          Urban                24   7.660206
+[2024-03-30 02:27:59,680] root - INFO - Saving csv to train_data and test_data.csv
+[2024-03-30 02:27:59,680] root - INFO - Data Transformation initiated
+[2024-03-30 02:27:59,683] root - INFO - shape of (36467, 12) and (9117, 12)
+[2024-03-30 02:27:59,683] root - INFO - shape of (36467,) and (9117,)
+[2024-03-30 02:27:59,773] root - INFO - Applying preprocessing object on training and testing datasets.
+[2024-03-30 02:27:59,773] root - INFO - shape of (36467, 20) and (9117, 20)
+[2024-03-30 02:27:59,773] root - INFO - shape of (36467,) and (9117,)
+[2024-03-30 02:27:59,773] root - INFO - transformation completed
+[2024-03-30 02:27:59,776] root - INFO - train_arr, test_arr completed
+[2024-03-30 02:27:59,776] root - INFO - train arr , test arr
+[2024-03-30 02:27:59,776] root - INFO - converting train_arr and test_arr to dataframe
+[2024-03-30 02:28:00,274] root - INFO - transformed_train_path
+[2024-03-30 02:28:00,274] root - INFO - transformed dataset columns : RangeIndex(start=0, stop=21, step=1)
+[2024-03-30 02:28:00,395] root - INFO - Preprocessor file saved
+[2024-03-30 02:28:00,396] root - INFO - Feature eng file saved
+[2024-03-30 02:28:00,397] root - INFO - Splitting Dependent and Independent variables from train and test data
+[2024-03-30 02:29:38,047] root - INFO - Model Report : {'XGBRegressor': 0.8169927782859026, 'SVR': 0.5420625976609488, 'RandomForestRegressor': 0.8049588926958049, 'GradientBoostingRegressor': 0.7579637198403206, 'DecisionTreeRegressor': 0.6520447196488846}
+[2024-03-30 02:29:38,047] root - INFO - Best model :XGBRegressor,R2 socre:0.8169927782859026
+[2024-03-30 02:29:38,083] root - INFO - Splitting Dependent and Independent variables from train and test data
+[2024-03-30 02:31:15,838] root - INFO - Model Report : {'XGBRegressor': 0.8169927782859026, 'SVR': 0.5420625976609488, 'RandomForestRegressor': 0.8051142629063694, 'GradientBoostingRegressor': 0.7580186309726524, 'DecisionTreeRegressor': 0.6523327528097124}
+[2024-03-30 02:31:15,838] root - INFO - Best model :XGBRegressor,R2 socre:0.8169927782859026
+[2024-03-30 02:31:15,863] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:31:15] "POST /train HTTP/1.1" 200 -
+[2024-03-30 02:32:28,562] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:32:28] "GET /train HTTP/1.1" 200 -
+[2024-03-30 02:32:43,739] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:32:43] "GET /predict HTTP/1.1" 200 -
+[2024-03-30 02:32:49,893] root - INFO - DataFrame gatherd
+[2024-03-30 02:32:49,912] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:32:49] "POST /predict HTTP/1.1" 200 -
+[2024-03-30 02:33:34,970] root - INFO - DataFrame gatherd
+[2024-03-30 02:33:34,985] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:33:34] "POST /predict HTTP/1.1" 200 -
+[2024-03-30 02:34:38,664] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\Prediction\\batch.py', reloading
+[2024-03-30 02:34:38,665] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\Prediction\\batch.py', reloading

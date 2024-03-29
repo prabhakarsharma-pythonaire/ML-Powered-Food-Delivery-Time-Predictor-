@@ -1,0 +1,74 @@
+[2024-03-30 02:24:46,969] werkzeug - WARNING -  * Debugger is active!
+[2024-03-30 02:24:46,980] werkzeug - INFO -  * Debugger PIN: 136-700-819
+[2024-03-30 02:24:49,007] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:24:49] "GET / HTTP/1.1" 200 -
+[2024-03-30 02:24:50,772] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:24:50] "GET /predict HTTP/1.1" 200 -
+[2024-03-30 02:25:00,755] root - INFO - DataFrame gatherd
+[2024-03-30 02:25:00,836] root - INFO -  error in transforming data
+[2024-03-30 02:25:00,836] root - INFO - Error occured in prediction pipeline
+[2024-03-30 02:25:00,871] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:25:00] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2024-03-30 02:25:01,209] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:25:01] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-03-30 02:25:01,266] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:25:01] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-03-30 02:25:01,604] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:25:01] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-03-30 02:26:09,845] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 02:26:09] "GET /train HTTP/1.1" 200 -
+[2024-03-30 02:26:11,334] root - INFO - Download data C:\prabhakar\projects\end-to-end-project\Data\finalTrain.csv
+[2024-03-30 02:26:11,334] root - INFO - Dataset read as pandas Dataframe
+[2024-03-30 02:26:11,726] root - INFO - train test split
+[2024-03-30 02:26:12,003] root - INFO - train data path, C:\prabhakar\projects\end-to-end-project\Artifact\data_ingestion\2024-03-30 02-24-44\ingested_dir\train.csv
+[2024-03-30 02:26:12,068] root - INFO - test data path, C:\prabhakar\projects\end-to-end-project\Artifact\data_ingestion\2024-03-30 02-24-44\ingested_dir\test.csv
+[2024-03-30 02:26:12,068] root - INFO - data ingestion complete
+[2024-03-30 02:26:12,191] root - INFO - Obtaining preprocessing object
+[2024-03-30 02:26:12,191] root - INFO - Obtaining feature engineering object.
+[2024-03-30 02:26:12,191] root - INFO - 
+******************** Feature Engneering Started ********************
+
+
+[2024-03-30 02:26:12,192] root - INFO - Applying feature engineering object on training dataframe and testing dataframe
+[2024-03-30 02:26:12,192] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Training data <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2024-03-30 02:26:12,192] root - INFO - Feature Enineering - Train Data 
+[2024-03-30 02:26:12,193] root - INFO - dropping the Id column
+[2024-03-30 02:26:12,193] root - INFO - Creating feature on latitude nad longitude
+[2024-03-30 02:26:12,211] root - INFO - Train Dataframe Head: 
+   Unnamed: 0  Delivery_person_Age  Delivery_person_Ratings Weather_conditions Road_traffic_density  Vehicle_condition Type_of_order Type_of_vehicle  multiple_deliveries Festival           City  Time_taken (min)   distance
+0       14989                 33.0                      5.0         Sandstorms                  Low                  0        Drinks      motorcycle                  1.0       No  Metropolitian                26  16.849940
+1       40024                 21.0                      4.7         Sandstorms               Medium                  0         Snack      motorcycle                  1.0       No  Metropolitian                20  13.788852
+2       17122                 32.0                      5.0                Fog               Medium                  1          Meal      motorcycle                  1.0       No  Metropolitian                39  19.916433
+3       17527                 31.0                      4.9             Stormy                 High                  2          Meal         scooter                  1.0       No  Metropolitian                26   6.081092
+4        8942                 36.0                      4.7                Fog                  Jam                  1          Meal      motorcycle                  1.0       No  Metropolitian                39  14.152801
+[2024-03-30 02:26:12,212] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Test data <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2024-03-30 02:26:12,212] root - INFO - Feature Enineering - Test Data 
+[2024-03-30 02:26:12,213] root - INFO - dropping the Id column
+[2024-03-30 02:26:12,213] root - INFO - Creating feature on latitude nad longitude
+[2024-03-30 02:26:12,218] root - INFO - Train Dataframe Head: 
+   Unnamed: 0  Delivery_person_Age  Delivery_person_Ratings Weather_conditions Road_traffic_density  Vehicle_condition Type_of_order Type_of_vehicle  multiple_deliveries Festival           City  Time_taken (min)   distance
+0       43226                 34.0                      4.0             Cloudy                  Jam                  2        Drinks      motorcycle                  2.0       No  Metropolitian                38  10.428149
+1       27825                 34.0                      4.6                Fog               Medium                  0          Meal      motorcycle                  1.0       No  Metropolitian                45  16.114177
+2       29349                 21.0                      4.9              Sunny               Medium                  2          Meal      motorcycle                  1.0       No          Urban                11  17.076597
+3       11311                 24.0                      5.0             Cloudy                  Low                  2          Meal         scooter                  0.0       No            NaN                17   7.772523
+4       24845                 20.0                      4.6         Sandstorms               Medium                  1        Drinks         scooter                  0.0       No          Urban                24   7.660206
+[2024-03-30 02:26:12,400] root - INFO - Saving csv to train_data and test_data.csv
+[2024-03-30 02:26:12,400] root - INFO - Data Transformation initiated
+[2024-03-30 02:26:12,400] root - INFO - shape of (36467, 12) and (9117, 12)
+[2024-03-30 02:26:12,400] root - INFO - shape of (36467,) and (9117,)
+[2024-03-30 02:26:12,503] root - INFO - Applying preprocessing object on training and testing datasets.
+[2024-03-30 02:26:12,503] root - INFO - shape of (36467, 20) and (9117, 20)
+[2024-03-30 02:26:12,503] root - INFO - shape of (36467,) and (9117,)
+[2024-03-30 02:26:12,503] root - INFO - transformation completed
+[2024-03-30 02:26:12,503] root - INFO - train_arr, test_arr completed
+[2024-03-30 02:26:12,503] root - INFO - train arr , test arr
+[2024-03-30 02:26:12,503] root - INFO - converting train_arr and test_arr to dataframe
+[2024-03-30 02:26:13,048] root - INFO - transformed_train_path
+[2024-03-30 02:26:13,049] root - INFO - transformed dataset columns : RangeIndex(start=0, stop=21, step=1)
+[2024-03-30 02:26:13,198] root - INFO - Preprocessor file saved
+[2024-03-30 02:26:13,198] root - INFO - Feature eng file saved
+[2024-03-30 02:26:13,203] root - INFO - Splitting Dependent and Independent variables from train and test data
+[2024-03-30 02:27:53,615] root - INFO - Model Report : {'XGBRegressor': 0.8169927782859026, 'SVR': 0.5420625976609488, 'RandomForestRegressor': 0.8050091894911676, 'GradientBoostingRegressor': 0.7579636601385091, 'DecisionTreeRegressor': 0.655132036125982}
+[2024-03-30 02:27:53,616] root - INFO - Best model :XGBRegressor,R2 socre:0.8169927782859026
+[2024-03-30 02:27:53,638] root - INFO - Splitting Dependent and Independent variables from train and test data
+[2024-03-30 02:27:55,723] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_transformatoin.py', reloading
+[2024-03-30 02:27:55,723] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_transformatoin.py', reloading
+[2024-03-30 02:27:55,724] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_transformatoin.py', reloading
+[2024-03-30 02:27:55,724] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_transformatoin.py', reloading
+[2024-03-30 02:27:55,724] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_transformatoin.py', reloading
+[2024-03-30 02:27:55,725] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_transformatoin.py', reloading
+[2024-03-30 02:27:55,725] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_transformatoin.py', reloading
+[2024-03-30 02:27:55,725] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_transformatoin.py', reloading

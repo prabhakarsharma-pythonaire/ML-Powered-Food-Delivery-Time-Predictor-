@@ -1,0 +1,38 @@
+[2024-03-30 01:20:36,712] werkzeug - WARNING -  * Debugger is active!
+[2024-03-30 01:20:36,720] werkzeug - INFO -  * Debugger PIN: 136-700-819
+[2024-03-30 01:20:51,723] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 01:20:51] "GET / HTTP/1.1" 200 -
+[2024-03-30 01:21:04,191] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 01:21:04] "GET /train HTTP/1.1" 200 -
+[2024-03-30 01:21:06,854] root - INFO - Optaining FE steps object
+[2024-03-30 01:21:06,854] root - INFO - ******************feature Engineering started******************
+[2024-03-30 01:21:06,858] root - INFO - droping columns from our original dataset
+[2024-03-30 01:21:06,874] root - INFO - droping columns from our original dataset
+[2024-03-30 01:21:07,071] root - INFO - Pipeline Steps Completed
+[2024-03-30 01:22:52,393] root - INFO - Best model :XGBRegressor,R2 socre:0.7129014261720379
+[2024-03-30 01:24:30,087] root - INFO - Best model :XGBRegressor,R2 socre:0.7129014261720379
+[2024-03-30 01:24:30,119] werkzeug - INFO - 127.0.0.1 - - [30/Mar/2024 01:24:30] "POST /train HTTP/1.1" 200 -
+[2024-03-30 01:39:44,045] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-30 01:39:44,045] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-30 01:39:44,077] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-30 01:39:44,078] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-30 01:39:44,078] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-30 01:39:44,078] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-30 01:39:44,078] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-30 01:39:44,080] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-30 01:39:44,080] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-30 01:39:44,080] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\model_trainer.py', reloading
+[2024-03-30 01:39:44,085] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_ingestion.py', reloading
+[2024-03-30 01:39:44,085] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_ingestion.py', reloading
+[2024-03-30 01:39:44,094] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_ingestion.py', reloading
+[2024-03-30 01:39:44,094] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_ingestion.py', reloading
+[2024-03-30 01:39:44,094] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_ingestion.py', reloading
+[2024-03-30 01:39:44,094] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_ingestion.py', reloading
+[2024-03-30 01:39:44,097] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_ingestion.py', reloading
+[2024-03-30 01:39:44,097] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_ingestion.py', reloading
+[2024-03-30 01:39:44,097] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_ingestion.py', reloading
+[2024-03-30 01:39:44,097] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_ingestion.py', reloading
+[2024-03-30 01:39:44,103] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_transformatoin.py', reloading
+[2024-03-30 01:39:44,103] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_transformatoin.py', reloading
+[2024-03-30 01:39:44,103] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_transformatoin.py', reloading
+[2024-03-30 01:39:44,103] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_transformatoin.py', reloading
+[2024-03-30 01:39:44,103] werkzeug - INFO -  * Detected change in 'c:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_transformatoin.py', reloading
+[2024-03-30 01:39:44,108] werkzeug - INFO -  * Detected change in 'C:\\prabhakar\\projects\\end-to-end-project\\src\\components\\data_transformatoin.py', reloading
