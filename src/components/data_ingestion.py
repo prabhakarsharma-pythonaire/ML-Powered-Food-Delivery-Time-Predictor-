@@ -6,9 +6,11 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from datetime import datetime
 from src.logger import logging
+from dataclasses import dataclass
 from src.exception import CustomException
+from src.components.data_transformatoin import DataTransformation
 
-
+@dataclass
 class DataIngestionConfig:
     train_data_path:str = TRAIN_FILE_PATH
     test_data_path: str= TEST_FILE_PATH
@@ -46,3 +48,5 @@ class DataIngestion:
 if __name__=="__main__":
     obj=DataIngestion()
     train_data,test_data=obj.intitiate_data_ingestion()
+    data_transformation = DataTransformation()
+    train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)

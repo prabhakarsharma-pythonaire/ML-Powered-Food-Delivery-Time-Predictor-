@@ -35,6 +35,6 @@ DATA_PREPROCCED_DIR="procceor"
 DATA_TRANSFORMATION_PROCESSING_OBJ="processor.pkl"
 DATA_TRANSFORM_DIR="transformation"
 TRANSFORMATION_TRAIN_DIR_KEY="train.csv"
-TRANSFORMATION_TEST_DIR_KEY="train.csv"
+TRANSFORMATION_TEST_DIR_KEY="test.csv"
 
 #ARTIFACT /data_transformation/processor.pkl and transformation ->train.csv and test.csv
