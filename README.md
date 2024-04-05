@@ -16,7 +16,9 @@ Description of Webapp-
 
 This project builds a model to predict delivery time using distance ,Delivery person age,wheather condition ,vehicle condtion ,type of vechicle ,city (tier1,tier2,tier3),road traffic etc and othe factors . The goal is to estimate the delivery of food condsidering most of the factors that can affect the delivery process . The project includes:
 
-Data Preprocessing: Cleaning, feature engineering, and data transformation.
+Dataset - Dataset shared by zomato is used in this project 
+
+Data Preprocessing:  Cleaning, feature engineering, and data transformation.
 Feature Selection: Identifying and selecting relevant features for model building.
 Model Training and Evaluation: Training and evaluating different regression models, such as Random Forest, Decision Tree, Gradient Boosting, Linear Regression, Ridge, and XGBRegressor.
 Model Selection: Choosing the best-performing model based on evaluation metrics (r2, MAE, MSE, RMSE).
